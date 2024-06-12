@@ -12,5 +12,8 @@
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.77.4"
+  },
+  "dependencies": {
+    "rellax": "^1.12.1"
   }
 }
