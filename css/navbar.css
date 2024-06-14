@@ -1,3 +1,13 @@
+.container-nav1 {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container-nav2 {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 body {
   background-color: #fff;
   padding: 0px;
@@ -15,17 +25,15 @@ html {
   justify-content: space-between;
   padding: 1rem 2rem;
   background: #cfd8dc;
-  height: 75px;
+  padding: 20px 0 20px 0;
 }
 .nav1 .logo {
-  margin-left: 105px;
-  margin-top: 17px;
+  padding: 17px 0 0 105px;
 }
 .nav1 ul {
   display: flex;
   list-style: none;
-  margin-top: 31px;
-  margin-right: 100px;
+  margin: 31px 100px 0 0;
 }
 .nav1 li {
   padding-left: 1rem;
@@ -62,19 +70,27 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 42px;
+  padding: 0 52px;
   position: relative;
+  text-align: center;
 }
-.nav2 .nav-menu li:not(:last-child)::after {
+.nav2 li:first-child::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: -11px;
+  padding: 50px 0 50px 0;
+  width: 1px;
+  background-color: rgba(136, 135, 135, 0.4);
+}
+.nav2 li::after {
   content: "";
   position: absolute;
   right: 0;
-  top: 0;
-  height: 183px;
-  margin-top: -10px;
-  bottom: 0;
+  top: -11px;
+  padding: 50px 0 50px 0;
   width: 1px;
-  background-color: rgba(136, 135, 135, 0.4156862745);
+  background-color: rgba(136, 135, 135, 0.4);
 }
 .nav2 .nav-menu a {
   text-decoration: none;
@@ -111,9 +127,7 @@ html {
 }
 
 .row {
-  margin: 73px 0px 70px 0px;
-  width: 710px;
-  height: 504px;
+  margin: 73px 0 70px 0;
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -150,19 +164,14 @@ html {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   width: 524px;
-  height: 237px;
 }
 .row .red-line-2 {
-  margin-top: 22px;
-  margin-bottom: 27px;
+  margin: 22px auto 27px 0;
   width: 137px;
   padding-top: 6px;
   background-color: #BF0F0F;
   outline: none;
   border: none;
-  left: 765px;
-  margin-left: 0;
-  margin-right: auto;
 }
 .row .grey-line-2 {
   padding-top: 3px;
@@ -172,8 +181,6 @@ html {
   margin-bottom: 30px;
 }
 .row .red-button {
-  width: 100px fixed;
-  height: 48px fixed;
   padding: 12px;
   background-color: #BF0F0F;
   color: #fff;
@@ -191,7 +198,7 @@ html {
 .container-2 {
   position: relative;
   width: 100%;
-  height: 502px;
+  padding: 251px 0 251px 0;
   background-image: url("../assets/test.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -223,12 +230,9 @@ html {
   content: "";
   display: block;
   width: 137px;
-  height: 6px;
+  padding: 3px 0 3px 0;
   background-color: #BF0F0F;
-  margin-top: 16px;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 16px auto auto auto;
 }
 
 .container .container-3 {
@@ -239,16 +243,15 @@ html {
 
 .row2 {
   align-items: center;
-  margin-top: 74px;
-  margin-left: 104px;
-  margin-right: 104px;
+  margin: 74px 104px 0px 104px;
   display: flex;
   flex-direction: row;
+  padding: 0 104px 0px 104px;
 }
 .row2 .test2 {
   display: flex;
   flex-direction: column;
-  padding: 0px 15px 0px 15px;
+  padding: 0 15px 0 15px;
   align-items: flex-start;
   text-align: start;
 }
@@ -265,28 +268,25 @@ html {
   content: "";
   display: block;
   width: 50px;
-  height: 2px;
+  padding: 1px 0 1px 0;
   background-color: #BF0F0F;
-  margin-top: 11px;
-  margin-bottom: 57px;
+  margin: 11px 0 57px 0;
 }
 .row2 .text2::after {
   content: "";
   display: block;
   width: 50px;
-  height: 2px;
+  padding: 1px 0 1px 0;
   background-color: #BF0F0F;
-  margin-top: 11px;
-  margin-bottom: 57px;
+  margin: 11px 0 57px 0;
 }
 .row2 .text3::after {
   content: "";
   display: block;
   width: 50px;
-  height: 2px;
+  padding: 1px 0 1px 0;
   background-color: #BF0F0F;
-  margin-top: 11px;
-  margin-bottom: 57px;
+  margin: 11px 0 57px 0;
 }
 .row2 .pics3 {
   display: block;
@@ -295,7 +295,7 @@ html {
   position: absolute;
   background-color: #BF0F0F;
   width: 401px;
-  height: 12px;
+  padding: 6px 0 6px 0;
   border: none;
   bottom: 105px;
 }
@@ -312,12 +312,9 @@ html {
   content: "";
   display: block;
   width: 137px;
-  height: 6px;
+  padding: 3px 0 3px 0;
   background-color: #BF0F0F;
-  margin-top: 32px;
-  margin-bottom: 93px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 32px auto 93px auto;
 }
 .container-4 .row3 {
   margin-bottom: 20px;
@@ -334,18 +331,14 @@ html {
 .container-4 .row4 {
   position: relative;
   width: 100%;
-  height: 500px;
+  padding: 172.5px 0 172.5px 0;
   background-image: url("../assets/red-pics.png");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
 .container-4 .text-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -363,7 +356,7 @@ html {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  height: 153px;
+  padding: 76.5px 0 76.5px 0;
   width: 1px;
   background-color: rgba(255, 255, 255, 0.231372549);
 }
@@ -375,13 +368,15 @@ html {
   margin: 5px 0 0;
   font-size: 18px;
 }
+.container-4 .m2 {
+  font-size: 26px;
+}
 
 .container-5 {
   padding-top: 92px;
   background-color: #F4F4F4;
   padding-bottom: 60px;
   position: relative;
-  height: 636px;
   text-align: center;
 }
 .container-5 .ct-5-text {
@@ -395,12 +390,9 @@ html {
   content: "";
   display: block;
   width: 524px;
-  height: 3px;
+  padding: 1.5px 0 1.5px 0;
   background-color: #C4C4C4;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 60px auto 60px auto;
 }
 .container-5 .row5 {
   margin-bottom: 60px;
@@ -416,17 +408,14 @@ html {
 }
 .container-5 .ct-5-text2-container {
   width: 524px;
-  height: 67px;
   gap: 0px;
   opacity: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
 }
 .container-5 .row6 {
   display: flex;
   flex-direction: row;
-  margin-left: 137px;
-  margin-right: 109px;
+  margin: 0 109px 40px 137px;
   background-color: #F4F4F4;
 }
 .container-5 .column-white {
@@ -447,15 +436,14 @@ html {
   content: "";
   display: block;
   width: 53.21px;
-  height: 2px;
+  padding: 1px 0 1px 0;
   background-color: #BF0F0F;
-  margin-top: 11px;
-  margin-bottom: auto;
+  margin: 11px 0 auto 0;
 }
 .container-5 .logo2 {
   position: absolute;
   left: 38px;
-  bottom: -32px;
+  bottom: -22px;
 }
 
 .container-6 {
@@ -470,52 +458,43 @@ html {
   text-align: center;
   color: #474747;
   width: 506px;
-  height: 68px;
+  padding: 39px 0 39px 0;
 }
 .container-6 .ct-6-text::after {
   content: "";
   display: block;
   width: 524px;
-  height: 3px;
+  padding: 1.5px 0 1.5px 0;
   background-color: #C4C4C4;
-  margin-top: 44px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 84px;
+  margin: 44px auto 84px auto;
 }
 .container-6 .row8 {
   display: flex;
   flex-direction: row;
-  margin-left: 190px;
-  margin-right: 190px;
+  margin: 0 190px 0 190px;
 }
 .container-6 .column-sponsors {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
   text-align: center;
   justify-content: center;
   width: 115px;
-  height: 161px;
 }
 .container-6 .image-wh {
   width: 115px;
-  height: 115px;
+  height: 136px;
 }
 .container-6 .sponsor-text {
   display: flex;
   flex-direction: column;
 }
 .container-6 .red-button-2 {
-  width: 100px fixed;
-  height: 48px fixed;
   padding: 12px;
   background-color: #BF0F0F;
   color: #fff;
   outline: none;
   border: none;
   border-radius: 4px;
-  margin-top: 75px;
-  margin-bottom: 75px;
+  margin: 75px 0 75px 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -526,9 +505,9 @@ html {
 label {
   position: absolute;
   width: 45px;
-  height: 22px;
+  padding: 11px 0 11px 0;
   right: 20px;
-  top: 20px;
+  top: 45px;
   border: 2px solid;
   border-radius: 20px;
   cursor: pointer;
@@ -539,7 +518,7 @@ label:before {
   position: absolute;
   content: "";
   width: 20px;
-  height: 20px;
+  padding: 10px 0 10px 0;
   left: 1px;
   top: 1px;
   border-radius: 50%;
@@ -600,8 +579,6 @@ body.night .ct-5-text {
 
 footer {
   margin: 0px;
-  padding: 0px;
-  height: 383px;
   background-image: url("../assets/footer-img.png");
   width: 100%;
 }
@@ -614,7 +591,7 @@ footer {
 .container-7 .row9 {
   position: relative;
   width: 100%;
-  height: 383px;
+  padding: 191.5px 0 191.5px 0;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -639,40 +616,35 @@ footer {
   content: "";
   position: absolute;
   right: 65px;
-  margin-bottom: 101px;
-  margin-top: 116px;
+  margin-top: 116px 0 101px 0;
   transform: translateY(-50%);
-  height: 196px;
+  padding: 120px 0 120px 0;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.7490196078);
+  background-color: rgba(255, 255, 255, 0.5215686275);
 }
 .container-7 .item3:not(:last-child)::after {
   content: "";
   position: absolute;
   right: 25px;
-  margin-bottom: 101px;
-  margin-top: -140px;
+  margin: -140px 0 101px 0;
   transform: translateY(-50%);
-  height: 196px;
+  padding: 120px 0 120px 0;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.7490196078);
+  background-color: rgba(255, 255, 255, 0.5215686275);
 }
 .container-7 .item3:not(:last-child)::before {
   content: "";
   position: absolute;
   right: 325px;
-  margin-bottom: 101px;
-  margin-top: 120px;
+  margin: 120px 0 101px 0;
   transform: translateY(-50%);
-  height: 196px;
+  padding: 120px 0 120px 0;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.7490196078);
+  background-color: rgba(255, 255, 255, 0.5215686275);
 }
 
 .item1 {
-  margin-bottom: 231px;
-  margin-top: 67px;
-  margin-left: 78px;
+  margin: 300px 0 231px 78px;
 }
 
 .footer-img {
@@ -724,4 +696,52 @@ footer {
 
 #item2-li {
   text-decoration: underline;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-content h2 {
+  margin-bottom: 15px;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.popup-content .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
 }

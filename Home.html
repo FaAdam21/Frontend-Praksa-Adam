@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <link rel="stylesheet" href="css/navbar.css">
     <title>Home</title>
 </head>
 <body>
   
+<div class="container-nav1">
     <nav class="nav1">
         <img src="./assets/logo.png" alt="Logo" width="218" height="44" class="logo">
         <ul>
@@ -18,10 +20,13 @@
           <li><a href="#" class="hu">Magyar</a></li>
         </ul>
     </nav>
+</div>
 
+
+<div class="container-nav2">
     <nav class="nav2">
         <ul class="nav-menu">
-          <li class="v-row"><a href="#"><span class="upperc">o nama</span> <span class="lowerc">vizija za uspeh</span></a></li>
+          <li class="v-row"><a href="#"><span class="upperc ">o nama</span> <span class="lowerc">vizija za uspeh</span></a></li>
           <li class="v-row"><a href="#"><span class="upperc">dvg proizvodi</span> <span class="lowerc">naši proizvodi</span></a></li>
           <li class="v-row"><a href="#"><span class="upperc">brendovi</span> <span class="lowerc">koje zasupamo</span></a></li>
           <li class="v-row"><a href="#"><span class="upperc">distribucija</span> <span class="lowerc">logistika i operativa</span></a></li>
@@ -30,16 +35,42 @@
           <li class="v-row"><a href="#"><span class="upperc">kontakt</span> <span class="lowerc">kontaktirajte nas</span></a></li>
         </ul>
     </nav>
-    
-    <div class="image-container">
-        <img src="./assets/Video.png" alt="" width="100%" height="705px">
-        <a href="#dvg-section">
-        <svg id="scrollIcon" class="icon-overlay" width="47" height="47" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="17.9633" cy="18.5504" r="16.6361" transform="rotate(180 17.9633 18.5504)" stroke="#F2F2F2" stroke-width="1.08134" stroke-linejoin="round"/>
-            <path d="M18.4832 25.3086L18.4832 11.7918" stroke="#F2F2F2" stroke-width="1.08134" stroke-linejoin="round"/>
-            <path d="M12.2446 20.1099C14.6809 22.5462 16.0469 23.9121 18.4831 26.3484L24.7217 20.1099" stroke="#F2F2F2" stroke-width="1.08134" stroke-linejoin="round"/>
-        </svg> </a>           
+</div>
+
+<div class="image-container swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="./assets/Video.png" alt="" width="100%" height="705px">
+            <a href="#dvg-section">
+                <svg id="scrollIcon" class="icon-overlay" width="47" height="47" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="17.9633" cy="18.5504" r="16.6361" transform="rotate(180 17.9633 18.5504)" stroke="#F2F2F2" stroke-width="1.08134" stroke-linejoin="round"/>
+                    <path d="M18.4832 25.3086L18.4832 11.7918" stroke="#F2F2F2" stroke-width="1.08134" stroke-linejoin="round"/>
+                    <path d="M12.2446 20.1099C14.6809 22.5462 16.0469 23.9121 18.4831 26.3484L24.7217 20.1099" stroke="#F2F2F2" stroke-width="1.08134" stroke-linejoin="round"/>
+                </svg> </a>  
+        </div>
+        <div class="swiper-slide">
+            <img src="./assets/Video.png" alt="" width="100%" height="705px">
+            <a href="#dvg-section">
+                <svg id="scrollIcon" class="icon-overlay" width="47" height="47" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="17.9633" cy="18.5504" r="16.6361" transform="rotate(180 17.9633 18.5504)" stroke="#F2F2F2" stroke-width="1.08134" stroke-linejoin="round"/>
+                    <path d="M18.4832 25.3086L18.4832 11.7918" stroke="#F2F2F2" stroke-width="1.08134" stroke-linejoin="round"/>
+                    <path d="M12.2446 20.1099C14.6809 22.5462 16.0469 23.9121 18.4831 26.3484L24.7217 20.1099" stroke="#F2F2F2" stroke-width="1.08134" stroke-linejoin="round"/>
+                </svg> </a>  
+        </div>
+        <div class="swiper-slide">
+            <img src="./assets/Video.png" alt="" width="100%" height="705px">
+            <a href="#dvg-section">
+                <svg id="scrollIcon" class="icon-overlay" width="47" height="47" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="17.9633" cy="18.5504" r="16.6361" transform="rotate(180 17.9633 18.5504)" stroke="#F2F2F2" stroke-width="1.08134" stroke-linejoin="round"/>
+                    <path d="M18.4832 25.3086L18.4832 11.7918" stroke="#F2F2F2" stroke-width="1.08134" stroke-linejoin="round"/>
+                    <path d="M12.2446 20.1099C14.6809 22.5462 16.0469 23.9121 18.4831 26.3484L24.7217 20.1099" stroke="#F2F2F2" stroke-width="1.08134" stroke-linejoin="round"/>
+                </svg> </a>  
+        </div>
     </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
 
     <div class="container">
         <div class="row">
@@ -84,7 +115,7 @@
         <div class="row4">
         <div class="text-overlay">
             <div class="item">
-                <h1>3.000m<sup>2</sup></h1>
+                <h1>3.000<span class="m2">m<sup>2</sup></span></h1>
                 <p>Magacinskog prostora</p>
             </div>
             <div class="item">
@@ -102,6 +133,7 @@
         </div>
     </div>
 
+
     <div class="container-5">
         <div class="row5">
            <h7 class="ct-5-text">Naši proizvodi</h7>
@@ -109,13 +141,16 @@
             <h6 class="ct-5-text2">Naše proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna nega lica I tela. Uspeli smo da uskladimo kvalitet i cenu, što su prepoznali i našI kupci.</h6>
            </div>
         </div>
+
         <div class="row6">
+        
             <div class="column-white" data-aos="fade-right"><img class="pics4" src="./assets/pics4.png" alt="image" width="232px" height="333px"> <h7 class="oprema-text">KESE I FOLIJE</h7> </div>
             <div class="column-white" data-aos="fade-right"><img class="pics5" src="./assets/pics5.png" alt="image" width="232px" height="333px"> <h7 class="oprema-text">ZA KUHINJU</h7></div>
-            <div class="column-white"><img class="pics6" src="./assets/pics6.png" alt="image" width="232px" height="333px"> <h7 class="oprema-text">UBRUSI I TOALET PAPIRI</h7></div>
+            <div class="column-white" ><img class="pics6" src="./assets/pics6.png" alt="image" width="232px" height="333px"> <h7 class="oprema-text">UBRUSI I TOALET PAPIRI</h7></div>
             <div class="column-white" data-aos="fade-left"><img class="pics7" src="./assets/pics7.png" alt="image" width="232px" height="333px"> <h7 class="oprema-text">KOZMETIKA</h7></div>
             <div class="column-white" data-aos="fade-left"><img class="pics8" src="./assets/pics8.png" alt="image" width="232px" height="333px"> <h7 class="oprema-text">PLASTIČNE KANTE</h7></div>
         </div>
+
         <img src="./assets/logo2.png" alt="logo" class="logo2">
     </div>
 
@@ -125,27 +160,27 @@
         </div>
         <div class="row8">
             <div class="column-sponsors">
-                <div class="image-wh"><img class="" src="./assets/dove.png" alt="image" width="79.16px" height="32.2px"></div>
+                <div class="image-wh"><img class="" src="./assets/dove.png" alt="image"></div>
                 <h7 class="sponsor-text">Dove</h7> 
             </div>         
             <div class="column-sponsors">
-                <div class="image-wh"><img class="" src="./assets/nivea.png" alt="image" width="84.6px" height="21px"> </div>
+                <div class="image-wh"><img class="" src="./assets/nivea.png" alt="image" > </div>
                 <h7 class="sponsor-text">Nivea</h7> 
             </div>
             <div class="column-sponsors">
-                <div class="image-wh"><img class="" src="./assets/palmolive.png" alt="image" width="72.9px" height="17.26px"> </div>
+                <div class="image-wh"><img class="" src="./assets/palmolive.png" alt="image"> </div>
                 <h7 class="sponsor-text">Palmolive</h7> 
             </div>
             <div class="column-sponsors">
-                <div class="image-wh"><img class="" src="./assets/vanish.png" alt="image" width="69" height="72.17px"> </div>
+                <div class="image-wh"><img class="" src="./assets/vanish.png" alt="image"> </div>
                 <h7 class="sponsor-text">Vanish</h7> 
             </div>
             <div class="column-sponsors">
-                <div class="image-wh"><img class="" src="./assets/ajax.png" alt="image" width="75px" height="61px"> </div>
+                <div class="image-wh"><img class="" src="./assets/ajax.png" alt="image"> </div>
                 <h7 class="sponsor-text">Ajax</h7> 
             </div>
             <div class="column-sponsors">
-                <div class="image-wh"><img class="" src="./assets/cif.png" alt="image" width="53.87px" height="65.4px"> </div>
+                <div class="image-wh"><img class="" src="./assets/cif.png" alt="image"> </div>
                 <h7 class="sponsor-text">Cif</h7> 
             </div>
         </div>
@@ -156,14 +191,6 @@
     <div>
         <label id="dark-change"></label>
     </div>
-    <script>
-        var darkMode = document.getElementById('dark-change');
-        darkMode.addEventListener('click', function(){
-            document.body.classList.toggle('night');
-            darkMode.classList.toggle('active');
-            document.querySelector('.nav1', '.nav2', '.container-5', '.column-white', '.oprema-text', '.ct-6-text', '.ct-5-text').classList.toggle('night');
-        })
-    </script>
 <!--Light-Dark Mode end--> 
 
 
@@ -236,11 +263,22 @@
 </footer>
 
 
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <h2>Cookies</h2>
+        <p>We use cookies to improve your experience on our website. By continuing to browse, you agree to our use of cookies. For more information, please read our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+        <button id="subscribeBtn">I Accept</button>
+    </div>
+</div>
+
+
 <!-- AOX EFFECTS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+<script src="script.js"></script>
 
 </body>
 </html>
